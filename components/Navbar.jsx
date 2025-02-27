@@ -44,43 +44,43 @@ const Navbar = () => {
           ? <>
           <UserButton>
             <UserButton.MenuItems>
-              <UserButton.Action label="Cart" labelIcon={<CartIcon />} onClick={()=>router.push('/cart')} /> {/* Traduzir */}
+              <UserButton.Action label="Cart" labelIcon={<CartIcon />} onClick={()=>router.push('/cart')} />
             </UserButton.MenuItems>
             <UserButton.MenuItems>
-              <UserButton.Action label="My Orders" labelIcon={<BagIcon />} onClick={()=>router.push('/my-orders')} /> {/* Traduzir */}
+              <UserButton.Action label="My Orders" labelIcon={<BagIcon />} onClick={()=>router.push('/my-orders')} />
             </UserButton.MenuItems>
           </UserButton>
           </>
           : <button onClick={openSignIn} className="flex items-center gap-2 hover:text-gray-900 transition">
             <Image src={assets.user_icon} alt="user icon" />
-            Account {/* Traduzir */}
+            Account
           </button>
         }
       </ul>
 
       <div className="flex items-center md:hidden gap-3">
-        {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>} {/* Traduzir */}
+        {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>}
         {
         user
           ? <>
           <UserButton>
             <UserButton.MenuItems>
-              <UserButton.Action label="Home" labelIcon={<HomeIcon />} onClick={()=>router.push('/')} /> {/* Traduzir */}
+              <UserButton.Action label="Home" labelIcon={<HomeIcon />} onClick={()=>router.push('/')} />
             </UserButton.MenuItems>
             <UserButton.MenuItems>
-              <UserButton.Action label="Products" labelIcon={<BoxIcon />} onClick={()=>router.push('/all-products')} /> {/* Traduzir */}
+              <UserButton.Action label="Products" labelIcon={<BoxIcon />} onClick={()=>router.push('/all-products')} />
             </UserButton.MenuItems>
             <UserButton.MenuItems>
-              <UserButton.Action label="Cart" labelIcon={<CartIcon />} onClick={()=>router.push('/cart')} /> {/* Traduzir */}
+              <UserButton.Action label="Cart" labelIcon={<CartIcon />} onClick={()=>router.push('/cart')} />
             </UserButton.MenuItems>
             <UserButton.MenuItems>
-              <UserButton.Action label="My Orders" labelIcon={<BagIcon />} onClick={()=>router.push('/my-orders')} /> {/* Traduzir */}
+              <UserButton.Action label="My Orders" labelIcon={<BagIcon />} onClick={()=>router.push('/my-orders')} />
             </UserButton.MenuItems>
           </UserButton>
           </>
           : <button onClick={openSignIn} className="flex items-center gap-2 hover:text-gray-900 transition">
             <Image src={assets.user_icon} alt="user icon" />
-            Account {/* Traduzir */}
+            Account
           </button>
         }
       </div>
